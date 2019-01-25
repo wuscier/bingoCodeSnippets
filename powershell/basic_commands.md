@@ -5,6 +5,7 @@
   
   
 # branching
+```powershell
 $var = 2
 if($var -eq)
 {
@@ -16,8 +17,10 @@ else
   Clear-Host
   "else branch"
 }
-  
+```
+
 # looping
+```powershell
 Clear-Host
 $i=1
 do
@@ -25,8 +28,10 @@ do
   "`$i = $i"
   $i++
 } while($i -le 5)
-
+```
+```powershell
 for($f=0;$f -le 5;$f++)
 {
   "`$f = $f"
 }
+```
