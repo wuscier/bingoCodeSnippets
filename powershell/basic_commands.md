@@ -91,6 +91,27 @@ $heretext
 "there are {0} items." -f $items
 ```
 
+# arrays
+```powershell
+$array = "hello","world"
+$array[0]
+$array[1]
+$array
+$array.GetType()
+$array[0] = "good"
+
+$array = @("formal","array","creation")
+$array = @()
+$array.Count
+
+$array = 1..5
+
+$number = 1, 2, 3
+$number -contains 2
+$number -notcontains 5
+
+```
+
 # branching
 ```powershell
 $var = 2
