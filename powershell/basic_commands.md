@@ -55,6 +55,35 @@ whatever is on the right is converted to the data on the left
 "042" -eq 42  #False
 ```
 
+# escape sequences `
+```powershell
+# backspace `b
+"plural`bsight"
+
+# new line `n
+"plural`nsight"
+
+# carriage return `r
+"plural`rsight"
+```
+
+# strings
+```powershell
+# here strings for large blocks of text
+$heretext = @"
+some text here
+some more here
+    a bit more
+    
+a blank line above
+"@
+
+$heretext
+
+# use expressions in strings, need to be wrapped in $()
+"there are $((Get-ChildItem).Count) items in the folder $(Get-Location)."
+```
+
 # branching
 ```powershell
 $var = 2
