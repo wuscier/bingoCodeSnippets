@@ -20,6 +20,27 @@ $mystring.GetType()
 $mystring.Contains("hello")
 $mystring.ToUpper()
 ```
+- long version
+```powershell
+# long version of $var = 123
+New-Variable -Name var -Value 123
+
+# assign a new value to an existing variable
+Set-Variable -Name var -Value 548
+
+# clear the contents of a variable
+Clear-Variable -Name var
+
+# wipe out a varable
+Remove-Variable -Name var
+
+# display the variable and it's value
+Get-Variable var -valueonly
+Get-Variable var
+
+# show all variables
+Get-Variable
+```
 - comparison
 ```powershell
 $myint -gt 4
