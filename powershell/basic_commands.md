@@ -55,6 +55,23 @@ whatever is on the right is converted to the data on the left
 "042" -eq 42  #False
 ```
 
+# built in variables
+```powershell
+$false
+$true
+
+$NULL
+$pwd # current directory
+$Home # users home directory
+
+$host
+$PID
+$PSVersionTable
+
+$_ # current object
+Get-ChildItem | Where-Object {$_.Name -like "*.ps1"}
+```
+
 # escape sequences `
 ```powershell
 # backspace `b
