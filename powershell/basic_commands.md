@@ -112,6 +112,23 @@ $number -notcontains 5
 
 ```
 
+# hash tables
+```powershell
+$hash = @{"key"   = "value";
+          "pluralsight" = "pluralsight.com";
+          "big cash"    = "github.com/wuscier"          
+          }
+$hash["big cash"]
+$hash["microsoft"] = "microsoft.com" #add value using new key
+$hash.Remove("big cash")
+
+$hash.Contains("big cash")
+$hash.ContainsValue("github.com/wuscier")
+
+$hash.Keys
+$hash.Values
+```
+
 # branching
 ```powershell
 $var = 2
