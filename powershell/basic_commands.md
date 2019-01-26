@@ -84,6 +84,13 @@ $heretext
 "there are $((Get-ChildItem).Count) items in the folder $(Get-Location)."
 ```
 
+# string formatting
+```powershell
+[string]::Format("there are {0} items.",$items)
+
+"there are {0} items." -f $items
+```
+
 # branching
 ```powershell
 $var = 2
