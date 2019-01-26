@@ -3,7 +3,27 @@
 - how to set execution policy: Help Set-ExecutionPolicy -full
   Set-ExecutionPolicy Unrestricted
   
-  
+# variables
+```powershell
+$myint = 5
+$myint -gt 4
+$myint -lt 4
+$myint -eq 4
+$myint.GetType()
+
+[System.Int32]$myStronglyTypedInt = 42
+[int]$myStronglyTypedInt2 = 42
+$myStronglyTypedInt.GetType()
+$myStronglyTypedInt2.GetType()
+
+$mystring = "hello world"
+$mystring.GetType()
+$mystring.Contains("hello")
+$mystring.ToUpper()
+
+
+```
+
 # branching
 ```powershell
 $var = 2
