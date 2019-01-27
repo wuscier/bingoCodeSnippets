@@ -91,3 +91,24 @@ $output.GetType()   # array
 
 ```
 
+# advanced functions
+```powershell
+function Get-AValue()
+{
+  [CmdletBinding()]
+  param([Parameter(Mandatory=$true,HelpMessage='please enter value one.')]
+        [int] $one, 
+        [Parameter(Mandatory=$false, HelpMessage='please enter value two.')]
+        [int] $two = 2
+  )
+  
+  begin {}
+  process { return $one * $two}
+  end {}
+}
+
+Get-AValue -one 22 -two 10
+Get-AValue -one 22
+Get-AValue
+Get-AValue -one "x"
+```
