@@ -112,3 +112,30 @@ Get-AValue -one 22
 Get-AValue
 Get-AValue -one "x"
 ```
+
+# error handling
+```powershell
+function divver($enum, $deno)
+{
+  Write-Host "divver begins."
+  try
+  {
+    $result = $enum / $denom
+  }
+  catch
+  {
+    Write-Host "an error has occurred!"
+    Write-Host $_.ErrorID
+    Write-Host $_.Exception.Message
+    break # error bubbles up to parent
+  }
+  finally
+  {
+    Write-Host "divver ends."
+  }
+}
+
+divver 33 3
+divver 33 0
+
+```
