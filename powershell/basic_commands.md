@@ -54,6 +54,11 @@ whatever is on the right is converted to the data on the left
 42 -eq "042"  #True
 "042" -eq 42  #False
 ```
+# scoped variables
+```powershell
+$Script:scopedToScriptVariable = 'In the morning!'
+$Global:scopedToGlobalVariable = 'in the global morning!'
+```
 
 # built in variables
 ```powershell
