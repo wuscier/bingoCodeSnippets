@@ -139,3 +139,30 @@ divver 33 3
 divver 33 0
 
 ```
+
+# modules
+```powershell
+# module-test.psm1
+function Write-One()
+{
+  Write-Output 'One'
+}
+function Write-Two()
+{
+  Write-Output 'Two'
+}
+#
+$modulePath = 'C:\Users\wuxu\Desktop\demo\'
+$moduleName = 'module-test'
+
+$module = "$($modulePath)$($moduleName).psm1"
+
+Import-Module -Force $module # to use a module, you need to import it first
+# to force ps to reload, use the -Force switch
+
+Get-Module # show list of modules in memory
+
+Write-One
+Write-Two
+```
+
