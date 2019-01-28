@@ -166,3 +166,9 @@ Write-One
 Write-Two
 ```
 
+# built-in variables
+```powershell
+$PSScriptRoot # shows the current directory of the script
+New-Guid # to generate a GUID
+```
+
