@@ -168,7 +168,7 @@ Write-Two
 
 # built-in variables
 ```powershell
-$PSScriptRoot # shows the current directory of the script
+$PSScriptRoot # a shortcut to "the current folder where the script is being run from"
 New-Guid # to generate a GUID
 ```
 
