@@ -20,5 +20,5 @@ mode
 mode con cols=200 lines=20000
 ```
 - use registry to save screen size and buffer size
-![http://blog.51cto.com/7098733/1775277](http://blog.51cto.com/7098733/1775277)
+http://blog.51cto.com/7098733/1775277
 
